@@ -35,22 +35,22 @@
  5. 编译dol  
     `$	cd ../dol` 进入刚刚新建dol文件夹  
     `sudo gedit build_zip.xml`                   用这个命令可以获得最高权限，这样就能对build_zip.xml进行修改，也可以直接找到这个文件，然后右键open with,然后选择gedit，如果这样进入后x无法修改就还是用终端用sudo打开就能修改，进去后找到
-> property name="systemc.inc" value="YYY/include"
+> property name="systemc.inc" value="YYY/include"  
 > property name="systemc.lib" value="YYY/lib-linux/libsystemc.a" 
 
     把YYY改成上页pwd的结果（注意，对于  64位 系统的机器，lib-linux要改成lib-linux64） 
 插入结果如下:  
-    ![build_zip](http://thumbnail0.baidupcs.com/thumbnail/94b31ec1d0ccc886d7736718d0f6a5b7?fid=1111119407-250528-85625229850344&time=1474909200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-KKlXQAv6NdM%2FV%2BQmKKW1z4IBg8Y%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=6263249018485029682&dp-callid=0&size=c710_u400&quality=100)
+    ![build_zip](http://thumbnail0.baidupcs.com/thumbnail/94b31ec1d0ccc886d7736718d0f6a5b7?fid=1111119407-250528-85625229850344&time=1474909200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-KKlXQAv6NdM%2FV%2BQmKKW1z4IBg8Y%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=6263249018485029682&dp-callid=0&size=c710_u400&quality=100)  
     `$	ant -f build_zip.xml all` 接着编译这个东西，成功的话就会显示build successful  
  6. 运行与测试  
     `$	cd build/bin/main` 进入build/bin/main路径下  
     `$	ant -f runexample.xml -Dnumber=1`运行第一个例子  
     运行完出现下面就说明配置成功了  
-    ![example](http://thumbnail0.baidupcs.com/thumbnail/e7a25443cdc794044b4d915c0d5e238e?fid=1111119407-250528-281267677262641&time=1474909200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-afe%2BO04ZXHmX7c3pEUy1mtAcvfU%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=6263401125515861759&dp-callid=0&size=c710_u400&quality=100)
+    ![example](http://thumbnail0.baidupcs.com/thumbnail/e7a25443cdc794044b4d915c0d5e238e?fid=1111119407-250528-281267677262641&time=1474909200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-afe%2BO04ZXHmX7c3pEUy1mtAcvfU%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=6263401125515861759&dp-callid=0&size=c710_u400&quality=100)  
 
 ----------
 ### Experimental experience
 
  - 配置dol环境过程中，遇到的唯一问题就是build_zip.xml修改没成功，所以最后build fail，然后重新修改完之后就build successful了，用的系统是ubuntu14.04，32位
- ![ubuntu](http://thumbnail0.baidupcs.com/thumbnail/cffd925c2f26d09a67c2c198ea93afea?fid=1111119407-250528-375777276540115&time=1474909200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-wgDXEoeqZYrHdYx%2FlUno1mWPv1Q%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=6263572088855993978&dp-callid=0&size=c710_u400&quality=100)
+ ![ubuntu](http://thumbnail0.baidupcs.com/thumbnail/cffd925c2f26d09a67c2c198ea93afea?fid=1111119407-250528-375777276540115&time=1474909200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-wgDXEoeqZYrHdYx%2FlUno1mWPv1Q%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=6263572088855993978&dp-callid=0&size=c710_u400&quality=100)  
   
