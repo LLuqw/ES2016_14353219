@@ -1,7 +1,7 @@
 
-- Example1结果
+- Example1结果  
 ![example1](https://github.com/LLuqw/ES2016_14353219/blob/master/image/ex1.jpg?raw=true)
-- Example2结果
+- Example2结果  
 ![example2](https://github.com/LLuqw/ES2016_14353219/blob/master/image/ex2.jpg?raw=true)
 - 修改方法
     - example1
