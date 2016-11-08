@@ -25,7 +25,7 @@
     `$	cd objdir` 进入该文件夹  
     `$	../configure CXX=g++ --disable-async-updates`   运行configure(能根据系统的环境设置一下参数，用于编译)  
 下面是运行configure后的结果：  
-    ![configure结果](https://github.com/LLuqw/ES2016_14353219/blob/master/image/configure%E7%BB%93%E6%9E%9C.jpg?raw=true)
+    ![configure结果](https://github.com/LLuqw/ES2016_14353219/blob/master/image/configure%E7%BB%93%E6%9E%9C.jpg?raw=true)  
     `$	sudo make install `编译systemc  
 编译后执行`$ cd .. ` 返回上级目录` $ ls`：打印出所在目录下的所有文件夹跟文件，可以看到如下结果：  
 ![ls查看](https://github.com/LLuqw/ES2016_14353219/blob/master/image/ls%E6%9F%A5%E7%9C%8B.jpg?raw=true)  
